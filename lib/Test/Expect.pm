@@ -56,7 +56,7 @@ sub expect_handle { return $expect->expect_handle(); }
 sub before {
     my $before = $expect->before;
     $before =~ s/\r//g;
-    $before =~ s/^$sent// if $sent;
+    $before =~ s/^\Q$sent\E// if $sent;
     $before =~ s/^\n+//;
     $before =~ s/\n+$//;
     return $before;

@@ -39,7 +39,7 @@ sub import {
 sub expect_run {
     my (%conf) = @_;
     $expect = Expect::Simple->new(
-        {   Cmd           => "PERL_RL=\"o=0\" " . $conf{command},
+        {   Cmd           => "PERL_RL=\" o=0\" " . $conf{command},
             Prompt        => $conf{prompt},
             DisconnectCmd => $conf{quit},
             Verbose       => 0,

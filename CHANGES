@@ -1,12 +1,19 @@
-Revision history for Perl module Devel::ebug
+Revision history for Perl module Test::Expect
 
-0.31 Wed May  7 10:15:19 BST 2008
-     - add expect_quit method to close the Expect object
-       (patch by Alex Vandiver)
+0.32 2015-04-02
+ - Quote regex meta-characters before using them in a regex (fixes
+   #81987)
+ - Include leading space in PERL_RL variable (fixes #38914)
+ - New maintainer (BPS)
 
-0.30 Tue Feb 28 21:54:16 GMT 2006
-     - added expect_handle to fetch the underlying Expect object
-       (patch by Kevin Riggle)
+0.31 2008-05-07
+ - add expect_quit method to close the Expect object (patch by Alex
+   Vandiver)
 
-0.29 Wed Mar 30 23:18:02 CST 2005
-     - initial release
+0.30 2006-02-28
+ - added expect_handle to fetch the underlying Expect object (patch by
+   Kevin Riggle)
+
+0.29 2005-03-30
+ - initial release
+

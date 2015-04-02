@@ -7,7 +7,7 @@ use Exporter;
 use Test::Builder;
 use base qw(Class::Accessor::Chained::Fast Exporter);
 __PACKAGE__->mk_accessors(qw(program));
-our $VERSION = "0.31";
+our $VERSION = "0.32";
 our @EXPORT  = qw(
     expect_run
     expect_handle
@@ -173,7 +173,7 @@ Test::More's like. It has an optional comment:
 
 This returns the L<Expect> object.
 
-=head1 expect_quit
+=head2 expect_quit
 
 Closes the L<Expect> handle.
 
@@ -183,11 +183,32 @@ L<Expect>, L<Expect::Simple>.
 
 =head1 AUTHOR
 
-Leon Brocard, C<< <acme@astray.com> >>
+Best Practical Solutions, LLC E<lt>modules@bestpractical.comE<gt>
+
+Original module by Leon Brocard, E<lt>acme@astray.comE<gt>
+
+=head1 BUGS
+
+=for html
+<p>All bugs should be reported via email to
+L<bug-RT-Extension-SLA@rt.cpan.org|mailto:bug-RT-Extension-SLA@rt.cpan.org>
+or via the web at
+L<rt.cpan.org|http://rt.cpan.org/Public/Dist/Display.html?Name=RT-Extension-SLA>.</p>
+
+=for text
+    All bugs should be reported via email to
+        bug-RT-Extension-SLA@rt.cpan.org
+    or via the web at
+        http://rt.cpan.org/Public/Dist/Display.html?Name=RT-Extension-SLA
+
 
 =head1 COPYRIGHT
+
+This extension is Copyright (C) 2015 Best Practical Solutions, LLC.
 
 Copyright (C) 2005, Leon Brocard
 
 This module is free software; you can redistribute it or modify it
 under the same terms as Perl itself.
+
+=cut

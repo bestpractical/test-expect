@@ -1,5 +1,10 @@
 Revision history for Perl module Test::Expect
 
+0.33 2015-04-02
+ - Allow multi-argument forms of "command" to be passed
+ - Force Term::ReadLine in called programs to use the "Stub"
+   implementation, which has consistent output (vs Term::ReadLine::Perl)
+
 0.32 2015-04-02
  - Quote regex meta-characters before using them in a regex (fixes
    #81987)

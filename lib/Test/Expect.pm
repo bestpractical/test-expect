@@ -38,8 +38,9 @@ sub import {
 
 sub expect_run {
     my (%conf) = @_;
+    local $ENV{PERL_RL} = " o=0";
     $expect = Expect::Simple->new(
-        {   Cmd           => "PERL_RL=\" o=0\" " . $conf{command},
+        {   Cmd           => $conf{command},
             Prompt        => $conf{prompt},
             DisconnectCmd => $conf{quit},
             Verbose       => 0,
@@ -107,7 +108,7 @@ Test::Expect - Automated driving and testing of terminal-based programs
   use Test::Expect;
   use Test::More tests => 13;
   expect_run(
-    command => "perl testme.pl",
+    command => ["perl", "testme.pl"],
     prompt  => 'testme: ',
     quit    => 'quit',
   );
@@ -135,10 +136,13 @@ the interactive program to run, what the prompt of the program is, and
 which command quits the program:
 
   expect_run(
-    command => "perl testme.pl",
+    command => ["perl", "testme.pl"],
     prompt  => 'testme: ',
     quit    => 'quit',
   );
+
+The C<command> may either be a string, or an arrayref of program and
+arguments; the latter for bypasses the shell.
 
 =head2 expect
 

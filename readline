@@ -3,7 +3,8 @@ use strict;
 use warnings;
 use Term::ReadLine;
 
-print "* Hi there, to readline\n";
+my $what = $ARGV[0] || "there";
+print "* Hi $what, to readline\n";
 
 my $term = Term::ReadLine->new('readline');
 

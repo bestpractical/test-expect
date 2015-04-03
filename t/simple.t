@@ -12,13 +12,13 @@ ok(1, "True");
 foreach my $filename ('read', 'readline') {
   ok($filename, "Testing $filename");
   expect_run(
-    command => "$^X $filename",
+    command => [$^X, $filename, "world"],
     prompt  => $filename . ': ',
     quit    => 'quit',
   );
   isa_ok(expect_handle(), 'Expect');
-  expect_like(qr/Hi there, to $filename/, "expect_like");
-  expect_is("* Hi there, to $filename", "expect_is");
+  expect_like(qr/Hi world, to $filename/, "expect_like");
+  expect_is("* Hi world, to $filename", "expect_is");
   expect_send("ping", "expect_send");
   expect("ping", "pong", "expect");
 };

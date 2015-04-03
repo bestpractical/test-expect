@@ -6,10 +6,7 @@ WriteMakefile
   'VERSION_FROM' => 'lib/Test/Expect.pm',
   'PREREQ_PM' => {
                    'Class::Accessor::Chained::Fast' => '0',
-                   'Expect::Simple' => '0',
-                   'Term::ReadLine' => '0',
-                   'Test::Builder' => '0',
-                   'Test::More' => '0'
+                   'Expect::Simple' => '0'
                  },
   'INSTALLDIRS' => 'site',
   'EXE_FILES' => [],

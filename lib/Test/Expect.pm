@@ -38,7 +38,7 @@ sub import {
 
 sub expect_run {
     my (%conf) = @_;
-    local $ENV{PERL_RL} = " o=0";
+    local $ENV{PERL_RL} = "Stub o=0";
     $expect = Expect::Simple->new(
         {   Cmd           => $conf{command},
             Prompt        => $conf{prompt},

@@ -194,15 +194,15 @@ Original module by Leon Brocard, E<lt>acme@astray.comE<gt>
 =head1 BUGS
 
 =for html <p>All bugs should be reported via email to <a
-href="mailto:bug-RT-Extension-SLA@rt.cpan.org">bug-RT-Extension-SLA@rt.cpan.org</a>
+href="mailto:bug-Test-Expect@rt.cpan.org">bug-Test-Expect@rt.cpan.org</a>
 or via the web at <a
-href="http://rt.cpan.org/Public/Dist/Display.html?Name=RT-Extension-SLA">rt.cpan.org</a>.</p>
+href="http://rt.cpan.org/Public/Dist/Display.html?Name=Test-Expect">rt.cpan.org</a>.</p>
 
 =for text
     All bugs should be reported via email to
-        bug-RT-Extension-SLA@rt.cpan.org
+        bug-Test-Expect@rt.cpan.org
     or via the web at
-        http://rt.cpan.org/Public/Dist/Display.html?Name=RT-Extension-SLA
+        http://rt.cpan.org/Public/Dist/Display.html?Name=Test-Expect
 
 
 =head1 COPYRIGHT

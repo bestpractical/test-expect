@@ -3,7 +3,7 @@ use strict;
 use warnings;
 use Term::ReadLine;
 
-my $what = $ARGV[0] || "there";
+my $what = (shift @ARGV) || "there";
 print "* Hi $what, to readline\n";
 
 my $term = Term::ReadLine->new('readline');

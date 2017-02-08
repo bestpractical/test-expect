@@ -3,7 +3,7 @@ use strict;
 use warnings;
 $| = 1;
 
-my $what = $ARGV[0] || "there";
+my $what = (shift @ARGV) || "there";
 print "* Hi $what, to read\n";
 
 while (1) {

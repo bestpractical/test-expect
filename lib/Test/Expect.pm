@@ -7,7 +7,7 @@ use Exporter;
 use Test::Builder;
 use base qw(Class::Accessor::Chained::Fast Exporter);
 __PACKAGE__->mk_accessors(qw(program));
-our $VERSION = "0.33";
+our $VERSION = "0.34";
 our @EXPORT  = qw(
     expect_run
     expect_handle

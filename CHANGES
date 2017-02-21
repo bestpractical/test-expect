@@ -1,5 +1,8 @@
 Revision history for Perl module Test::Expect
 
+0.34 2017-02-21
+ - Fix intermittent failure of tests (fixes #110276)
+
 0.33 2015-04-02
  - Allow multi-argument forms of "command" to be passed
  - Force Term::ReadLine in called programs to use the "Stub"
